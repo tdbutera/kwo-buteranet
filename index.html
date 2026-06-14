@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>ButeraNet × King's West O'ahu — Capabilities</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1F4E79; --navy2:#0B1F3A; --blue:#2E75B6; --lblue:#D5E8F0;
+  --ink:#1E293B; --muted:#64748B; --line:#E2E8F0; --bg:#F8FAFC; --white:#FFFFFF;
+  --green:#0F7B55; --red:#B91C1C; --amber:#B45309;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+body{font-family:'Inter',Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px;}
+.eyebrow{font-size:12px;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;color:var(--blue);}
+h1{font-size:40px;font-weight:900;line-height:1.14;letter-spacing:-0.9px;margin:14px 0 16px;}
+h2{font-size:28px;font-weight:800;color:var(--navy);letter-spacing:-0.4px;margin:6px 0 10px;}
+h3{font-size:16px;font-weight:800;color:var(--navy);}
+p{margin:0;}
+.section{padding:56px 0;}
+.section.white{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.section.navy{background:var(--navy);color:var(--white);}
+.section.navy h2{color:#fff;} .section.navy .eyebrow{color:#7FB3D9;}
+.lead{color:var(--muted);max-width:800px;margin:0 0 24px;}
+.section.navy .lead{color:#CBD5E1;}
+.card{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:22px;}
+.card.t-blue{border-top:3px solid var(--blue);} .card.t-green{border-top:3px solid var(--green);}
+.card.t-amber{border-top:3px solid var(--amber);} .card.t-red{border-top:3px solid var(--red);}
+.card.callout{background:var(--lblue);border:none;}
+.grid{display:grid;gap:16px;} .g4{grid-template-columns:repeat(4,1fr);} .g3{grid-template-columns:repeat(3,1fr);} .g2{grid-template-columns:1fr 1fr;}
+.kicker{font-size:11px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase;margin-bottom:6px;color:var(--blue);}
+.hero{background:linear-gradient(135deg,var(--navy2),var(--navy));color:#fff;padding:70px 0 60px;}
+.hero h1{color:#fff;} .hero p{font-size:18px;color:#CBD5E1;max-width:760px;} .hero .eyebrow{color:#7FB3D9;}
+.hero .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:26px;}
+.chip{font-size:12px;font-weight:700;padding:7px 13px;border-radius:30px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);color:#E2E8F0;}
+.band{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase;padding:5px 12px;border-radius:30px;margin-bottom:14px;}
+.band.proven{background:#F0FDF4;color:var(--green);border:1px solid #BBE7D2;}
+.band.found{background:#EFF6FF;color:var(--blue);border:1px solid #C4DCF2;}
+.band.plan{background:#FFFBEB;color:var(--amber);border:1px solid #F2E2BC;}
+.tag-ill{font-size:10px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;color:var(--amber);background:#FFFBEB;border:1px solid #F2E2BC;border-radius:5px;padding:2px 7px;}
+.table-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:12px;}
+table{border-collapse:collapse;width:100%;}
+.bn-table{min-width:560px;}
+.bn-table th{background:var(--navy);color:#fff;font-size:11px;font-weight:800;letter-spacing:.6px;text-transform:uppercase;padding:10px 14px;text-align:left;}
+.bn-table td{padding:11px 14px;font-size:13px;border-top:1px solid var(--line);vertical-align:top;}
+.bn-table tr:nth-child(even) td{background:var(--bg);}
+.bn-table .area{font-weight:700;color:var(--navy);} .bn-table .before{color:var(--muted);} .bn-table .after{color:var(--green);font-weight:600;}
+.metric{display:flex;flex-direction:column;gap:4px;}
+.bar{height:14px;border-radius:7px;background:#EDF2F7;overflow:hidden;}
+.bar > i{display:block;height:100%;border-radius:7px;width:0;transition:width 1.1s cubic-bezier(.2,.7,.2,1);}
+.bar.green > i{background:linear-gradient(90deg,#10b981,#0F7B55);} .bar.blue > i{background:linear-gradient(90deg,#3b82f6,#2E75B6);} .bar.amber > i{background:linear-gradient(90deg,#f59e0b,#B45309);}
+.mlabel{display:flex;justify-content:space-between;font-size:12px;}
+.mlabel b{color:var(--navy);}
+.gauge-wrap{display:flex;gap:26px;flex-wrap:wrap;justify-content:center;}
+.gauge{text-align:center;}
+.gauge svg{transform:rotate(-90deg);}
+.gauge .num{font-size:26px;font-weight:900;color:var(--navy);margin-top:-58px;display:block;}
+.gauge .cap{font-size:12px;color:var(--muted);margin-top:30px;}
+.step{display:flex;gap:14px;padding:14px 0;align-items:flex-start;} .step+.step{border-top:1px solid var(--line);}
+.step .n{flex-shrink:0;width:30px;height:30px;border-radius:15px;background:var(--navy);color:#fff;font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center;}
+.controls{display:flex;gap:26px;flex-wrap:wrap;align-items:flex-end;}
+.ctl{min-width:160px;} .ctl .num{font-size:24px;font-weight:900;color:var(--navy);}
+input[type=range]{width:100%;max-width:240px;height:26px;cursor:pointer;accent-color:var(--blue);}
+.sub{font-size:11px;color:var(--muted);}
+.heat{display:grid;grid-template-columns:repeat(8,1fr);gap:3px;max-width:520px;border-radius:10px;overflow:hidden;}
+.heat div{aspect-ratio:1.6/1;border-radius:3px;}
+.legend{display:flex;gap:14px;font-size:11px;color:var(--muted);margin-top:10px;align-items:center;}
+.dot{width:11px;height:11px;border-radius:3px;display:inline-block;margin-right:4px;vertical-align:-1px;}
+.foot{background:var(--navy2);color:#CBD5E1;padding:42px 0;font-size:13px;}
+.foot .name{font-weight:900;font-size:18px;color:#fff;}
+.foot .disc{margin-top:16px;font-size:11px;color:#64748B;line-height:1.6;max-width:880px;}
+.cta{display:inline-block;margin-top:8px;background:var(--blue);color:#fff;font-weight:800;font-size:14px;padding:12px 22px;border-radius:10px;text-decoration:none;}
+.muted{color:var(--muted);}
+@media(max-width:760px){.g4{grid-template-columns:1fr 1fr;} .g3,.g2{grid-template-columns:1fr;} .heat{grid-template-columns:repeat(8,1fr);}}
+@media(max-width:640px){.wrap{padding:0 16px;} h1{font-size:29px;} h2{font-size:22px;} .section{padding:40px 0;} .hero{padding:48px 0 42px;} .hero p{font-size:15px;}}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero"><div class="wrap">
+  <div class="eyebrow">ButeraNet Solutions &times; King's West O'ahu</div>
+  <h1>Full IT, security &amp; digital capability — built for the Kapolei campus and the King's network.</h1>
+  <p>One standardized foundation: enterprise network and Wi-Fi, real cybersecurity, managed patching, email and
+  domain protection, complete documentation you own, and AI tools built for ministry. Proven first at Kings Central
+  Oahu, ready to replicate at West O'ahu and across every campus.</p>
+  <div class="chips">
+    <span class="chip">Network &amp; Wi-Fi</span><span class="chip">Cybersecurity (BCAF)</span>
+    <span class="chip">Patch Management</span><span class="chip">Email &amp; Domain Protection</span>
+    <span class="chip">Managed Services</span><span class="chip">SOPs &amp; Documentation</span>
+    <span class="chip">AI for Ministry</span><span class="chip">Self-Sufficiency</span>
+  </div>
+</div></div>
+
+<!-- PROVEN AT KCO -->
+<div class="section"><div class="wrap">
+  <span class="band proven">● Proven at Kings Central Oahu — measured results</span>
+  <h2>This is a record, not a projection</h2>
+  <p class="lead">King's West O'ahu is a sister campus to Kings Central Oahu (Hawaii Kai) — ButeraNet's founding
+  engagement. Every number below was measured on that network and is verifiable with its operations point of contact.</p>
+  <div class="grid g2" style="align-items:start">
+    <div class="table-scroll"><table class="bn-table">
+      <thead><tr><th>Area</th><th>Before</th><th>After</th></tr></thead>
+      <tbody>
+        <tr><td class="area">Firewall firmware</td><td class="before">Dead / unpatched</td><td class="after">Current, managed windows</td></tr>
+        <tr><td class="area">Network performance</td><td class="before">5,433 ms bufferbloat</td><td class="after">Controlled — stable calls</td></tr>
+        <tr><td class="area">Segmentation</td><td class="before">Flat — one network</td><td class="after">7-segment VLAN design</td></tr>
+        <tr><td class="area">Wi-Fi reliability</td><td class="before">Frequent drop-offs</td><td class="after">91% fewer assoc. failures</td></tr>
+        <tr><td class="area">Remote management</td><td class="before">None — truck rolls</td><td class="after">Secured Cloudflare Tunnel</td></tr>
+      </tbody>
+    </table></div>
+    <div class="card">
+      <div class="kicker">Measured improvement</div>
+      <div class="metric" style="margin-bottom:14px"><div class="mlabel"><span>Bufferbloat under load</span><b>5,433 ms → controlled</b></div><div class="bar green" data-fill="96"><i></i></div></div>
+      <div class="metric" style="margin-bottom:14px"><div class="mlabel"><span>Wi-Fi association failures</span><b>−91%</b></div><div class="bar green" data-fill="91"><i></i></div></div>
+      <div class="metric" style="margin-bottom:14px"><div class="mlabel"><span>Network segmentation</span><b>1 → 7 zones</b></div><div class="bar blue" data-fill="100"><i></i></div></div>
+      <div class="metric"><div class="mlabel"><span>Remote manageability</span><b>0 → full</b></div><div class="bar blue" data-fill="100"><i></i></div></div>
+      <div class="sub" style="margin-top:12px;font-style:italic">Verified with the Kings Central Oahu operations point of contact.</div>
+    </div>
+  </div>
+</div></div>
+
+<!-- SCALING / COST MODEL -->
+<div class="section white"><div class="wrap">
+  <div class="eyebrow">The Enterprise Model</div>
+  <h2>One standard, every site — cost per location falls as the network standardizes</h2>
+  <p class="lead">ButeraNet is priced as a tiered enterprise model, not a flat per-site fee. The first locations carry
+  the design load; each added campus is standardized to the same build, so the blended cost per site drops as the
+  organization scales. Move the slider to see the model. Published vendor rates (UniFi, Atera, Hudu — 2026); not a binding quote.</p>
+  <div class="card" style="margin-bottom:16px"><div class="controls">
+    <div class="ctl"><div class="kicker" style="color:var(--green)">Locations</div><div class="num"><span id="sv">1</span></div>
+      <input type="range" id="sites" min="1" max="900" value="1" style="accent-color:var(--green)">
+      <div class="sub">West O'ahu at 1; the whole network at 900.</div></div>
+    <div class="ctl"><div class="kicker">ButeraNet managed fee</div><div class="num" style="color:var(--navy)">$<span id="mf">500</span><span class="sub">/mo</span></div></div>
+    <div class="ctl"><div class="kicker">Platform / tooling</div><div class="num" style="color:var(--navy)">$<span id="tl">206</span><span class="sub">/mo</span></div></div>
+    <div class="ctl"><div class="kicker" style="color:var(--green)">Effective per site</div><div class="num" style="color:var(--green)">$<span id="ps">706</span><span class="sub">/site/mo</span></div></div>
+  </div>
+  <div class="sub" style="margin-top:10px">Progressive tiering — Site 1 $500 · Sites 2–25 $350 · 26–100 $225 · 101–300 $150 · 301–900 $95. Hardware (billed at actual cost, owned by the church) and internet service are excluded.</div>
+  </div>
+</div></div>
+
+<!-- SECURITY / BCAF -->
+<div class="section"><div class="wrap">
+  <div class="eyebrow">Cybersecurity</div>
+  <h2>Real security, scored — the BCAF v1.3 framework</h2>
+  <p class="lead">Every engagement is assessed against the ButeraNet Cybersecurity Assessment Framework — 6 domains,
+  83 checks, 166 points, mapped to NIST CSF 2.0, CIS Controls v8.1, and NIST SP 800-171. It produces a maturity tier
+  and a prioritized remediation plan leadership can act on. <span class="tag-ill">Bars below illustrate the model — your scores are measured on assessment</span></p>
+  <div class="grid g2" style="align-items:start">
+    <div class="card">
+      <div class="kicker">Six assessment domains</div>
+      <div class="metric" style="margin:8px 0"><div class="mlabel"><span>1 · Governance &amp; Administration</span><b>/24</b></div><div class="bar blue" data-fill="70"><i></i></div></div>
+      <div class="metric" style="margin:8px 0"><div class="mlabel"><span>2 · Identity &amp; Access</span><b>/24</b></div><div class="bar blue" data-fill="62"><i></i></div></div>
+      <div class="metric" style="margin:8px 0"><div class="mlabel"><span>3 · Network &amp; Perimeter</span><b>/30</b></div><div class="bar blue" data-fill="78"><i></i></div></div>
+      <div class="metric" style="margin:8px 0"><div class="mlabel"><span>4 · Systems, Patching &amp; Hardening</span><b>/44</b></div><div class="bar blue" data-fill="66"><i></i></div></div>
+      <div class="metric" style="margin:8px 0"><div class="mlabel"><span>5 · Physical Security</span><b>/24</b></div><div class="bar blue" data-fill="74"><i></i></div></div>
+      <div class="metric" style="margin:8px 0"><div class="mlabel"><span>6 · People, Culture &amp; Response</span><b>/20</b></div><div class="bar blue" data-fill="60"><i></i></div></div>
+    </div>
+    <div class="card t-blue">
+      <div class="kicker">Maturity tiers</div>
+      <table class="bn-table" style="min-width:0"><tbody>
+        <tr><td class="area">Tier 1 — Critical</td><td>0–20% · unmanaged, exploitable</td></tr>
+        <tr><td class="area">Tier 2 — Elevated</td><td>21–40% · ad hoc</td></tr>
+        <tr><td class="area">Tier 3 — Developing</td><td>41–60% · inconsistent</td></tr>
+        <tr><td class="area">Tier 4 — Managed</td><td>61–80% · structured</td></tr>
+        <tr><td class="area">Tier 5 — Optimized</td><td>81–100% · resilient</td></tr>
+      </tbody></table>
+      <div class="sub" style="margin-top:10px">Scored 0 / 1 / 2 on observed state — not intended state. Every 0 or 1 becomes a tracked remediation item with owner, target date, and cost.</div>
+    </div>
+  </div>
+</div></div>
+
+<!-- CAPABILITY GRID: patch, threat, email/domain -->
+<div class="section white"><div class="wrap">
+  <div class="eyebrow">What's Included</div>
+  <h2>The full stack, managed</h2>
+  <div class="grid g3">
+    <div class="card t-green"><h3>Patch &amp; Vulnerability Management</h3>
+      <p class="sub" style="font-size:13px;margin-top:6px">Documented patch SLA — CRITICAL within 14 days, security-rated within 30. Firmware kept current on firewall, switches, APs. CISA KEV catalog monitored. EOL hardware flagged and replaced, never left exposed.</p></div>
+    <div class="card t-green"><h3>Threat Protection</h3>
+      <p class="sub" style="font-size:13px;margin-top:6px">IDS/IPS with current signatures, DNS filtering against malicious domains, endpoint protection (AV/EDR) on every device, and anti-phishing email filtering with attachment sandboxing.</p></div>
+    <div class="card t-green"><h3>Email &amp; Domain Protection</h3>
+      <p class="sub" style="font-size:13px;margin-top:6px">SPF, DKIM, and DMARC configured and enforced so the church's name can't be spoofed. Microsoft 365 hardened. Domain ownership documented and brought under church control.</p></div>
+    <div class="card t-green"><h3>Network &amp; Segmentation</h3>
+      <p class="sub" style="font-size:13px;margin-top:6px">Business-class firewall, VLAN segmentation (Staff · Guest · AV/Audio · IoT · Management), isolated guest Wi-Fi, and logging retained 90+ days.</p></div>
+    <div class="card t-green"><h3>Backup &amp; Recovery</h3>
+      <p class="sub" style="font-size:13px;margin-top:6px">3-2-1-1-0 backup model — 3 copies, 2 media, 1 offsite, 1 immutable, 0 failed restore tests. Restores actually tested, not assumed.</p></div>
+    <div class="card t-green"><h3>Managed Services (MSP)</h3>
+      <p class="sub" style="font-size:13px;margin-top:6px">24/7 monitoring, remote management, patching, helpdesk, and monthly reporting. Minimally-manned by design — runs reliably with no IT staff on site.</p></div>
+  </div>
+</div></div>
+
+<!-- WIFI COVERAGE -->
+<div class="section"><div class="wrap">
+  <span class="band plan">● Our plan &amp; targets for West O'ahu</span>
+  <h2>Wi-Fi designed to the room <span class="tag-ill">Illustrative — measured on assessment</span></h2>
+  <p class="lead">A site survey produces a real coverage map of the Kapolei space — every seat covered, dead zones
+  eliminated, guest/staff/AV traffic separated. The heat-map below is an illustrative sample of the deliverable;
+  the actual map is generated from on-site measurements.</p>
+  <div class="grid g2" style="align-items:center">
+    <div><div class="heat" id="heat"></div>
+      <div class="legend"><span><i class="dot" style="background:#0F7B55"></i>Strong</span><span><i class="dot" style="background:#3b82f6"></i>Good</span><span><i class="dot" style="background:#f59e0b"></i>Weak</span><span><i class="dot" style="background:#B91C1C"></i>Dead zone</span><span class="tag-ill">Sample</span></div>
+    </div>
+    <div class="card t-amber">
+      <div class="kicker" style="color:var(--amber)">The Wi-Fi deliverable</div>
+      <ul class="sub" style="font-size:13px;line-height:1.9;margin-left:16px">
+        <li>On-site survey + measured coverage heat-map</li>
+        <li>AP placement plan for full-room coverage</li>
+        <li>WPA2-AES / WPA3, 20+ char passphrases</li>
+        <li>Separate guest, staff, AV/audio, and IoT SSIDs</li>
+        <li>Roaming tuned for live services &amp; streaming</li>
+      </ul>
+    </div>
+  </div>
+</div></div>
+
+<!-- SELF SUFFICIENCY -->
+<div class="section navy"><div class="wrap">
+  <span class="band plan" style="background:rgba(255,255,255,.08);color:#FBE6BF;border-color:rgba(255,255,255,.2)">● Our plan &amp; targets</span>
+  <h2>You are never locked in — not even to ButeraNet</h2>
+  <p class="lead">Every engagement is built to hand the church its own environment: documented, credentialed, and
+  operable without us. We measure that as a self-sufficiency score and drive it up over the engagement.
+  <span class="tag-ill" style="background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.25);color:#FBE6BF">Targets — measured on the live environment</span></p>
+  <div class="gauge-wrap" style="margin:10px 0 18px">
+    <div class="gauge"><svg width="150" height="150" viewBox="0 0 150 150"><circle cx="75" cy="75" r="62" fill="none" stroke="rgba(255,255,255,.14)" stroke-width="14"/><circle class="ring" data-pct="80" cx="75" cy="75" r="62" fill="none" stroke="#10b981" stroke-width="14" stroke-linecap="round" stroke-dasharray="389.6" stroke-dashoffset="389.6"/></svg><span class="num" style="color:#fff">80%</span><div class="cap" style="color:#CBD5E1">Phase 1 — handover started</div></div>
+    <div class="gauge"><svg width="150" height="150" viewBox="0 0 150 150"><circle cx="75" cy="75" r="62" fill="none" stroke="rgba(255,255,255,.14)" stroke-width="14"/><circle class="ring" data-pct="90" cx="75" cy="75" r="62" fill="none" stroke="#3b82f6" stroke-width="14" stroke-linecap="round" stroke-dasharray="389.6" stroke-dashoffset="389.6"/></svg><span class="num" style="color:#fff">90%</span><div class="cap" style="color:#CBD5E1">Phase 2 — documented &amp; trained</div></div>
+    <div class="gauge"><svg width="150" height="150" viewBox="0 0 150 150"><circle cx="75" cy="75" r="62" fill="none" stroke="rgba(255,255,255,.14)" stroke-width="14"/><circle class="ring" data-pct="95" cx="75" cy="75" r="62" fill="none" stroke="#f59e0b" stroke-width="14" stroke-linecap="round" stroke-dasharray="389.6" stroke-dashoffset="389.6"/></svg><span class="num" style="color:#fff">95%</span><div class="cap" style="color:#CBD5E1">Phase 3 — fully self-operable</div></div>
+  </div>
+  <div class="grid g3">
+    <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:18px"><h3 style="color:#fff">Credentials</h3><p class="sub" style="color:#CBD5E1">Every login documented and handed to the church in a secure vault.</p></div>
+    <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:18px"><h3 style="color:#fff">SOPs &amp; Documentation</h3><p class="sub" style="color:#CBD5E1">Written runbooks, network diagrams, and a device inventory the church owns.</p></div>
+    <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:18px"><h3 style="color:#fff">Ownership</h3><p class="sub" style="color:#CBD5E1">Hardware owned outright, no per-device licensing, nothing to switch off.</p></div>
+  </div>
+</div></div>
+
+<!-- SOPs -->
+<div class="section white"><div class="wrap">
+  <div class="eyebrow">Documentation Handover</div>
+  <h2>Standard Operating Procedures, written and handed over</h2>
+  <p class="lead">Seven core SOPs ship with every engagement, so staff can handle day-to-day work and any future
+  provider can step in without disruption.</p>
+  <div class="grid g4">
+    <div class="card"><h3 style="font-size:14px">Device Onboarding</h3></div>
+    <div class="card"><h3 style="font-size:14px">Administrative Access</h3></div>
+    <div class="card"><h3 style="font-size:14px">Firewall Rule Change</h3></div>
+    <div class="card"><h3 style="font-size:14px">Access Point Management</h3></div>
+    <div class="card"><h3 style="font-size:14px">Threat Response</h3></div>
+    <div class="card"><h3 style="font-size:14px">Backup &amp; Recovery</h3></div>
+    <div class="card"><h3 style="font-size:14px">ISP Escalation</h3></div>
+    <div class="card callout"><h3 style="font-size:14px;color:var(--navy)">+ Network diagrams, asset register, credential vault</h3></div>
+  </div>
+</div></div>
+
+<!-- AI FOR MINISTRY -->
+<div class="section"><div class="wrap">
+  <span class="band plan">● Roadmap capability</span>
+  <h2>AI built for ministry, not bolted on</h2>
+  <p class="lead">ButeraNet is developing an AI platform purpose-built for churches — grounded in your own documents,
+  with strict source-citation so it never invents an answer. <span class="tag-ill">In development — availability confirmed per engagement</span></p>
+  <div class="grid g3">
+    <div class="card t-blue"><h3>Grounded knowledge</h3><p class="sub" style="font-size:13px;margin-top:6px">Ask questions across sermons, policies, and ministry documents — answers cite the exact source, with integrity checks against fabrication.</p></div>
+    <div class="card t-blue"><h3>Teaching &amp; study tools</h3><p class="sub" style="font-size:13px;margin-top:6px">Scripture cross-references, translation comparison, and word study to support teaching and study — drawn from trusted sources.</p></div>
+    <div class="card t-blue"><h3>Operations assist</h3><p class="sub" style="font-size:13px;margin-top:6px">Connectors for ministry and finance systems, with per-document access control so the right people see the right things.</p></div>
+  </div>
+</div></div>
+
+<!-- FOUND AT WEST OAHU (public-safe) -->
+<div class="section white"><div class="wrap">
+  <span class="band found">● Found at West O'ahu — desk assessment, June 2026</span>
+  <h2>We already studied your online presence</h2>
+  <p class="lead">Before any site visit, ButeraNet assessed how King's West O'ahu appears online. The summary below is
+  high-level; the full confidential audit — with every source, screenshot, and the exact fixes — is reserved for
+  leadership.</p>
+  <div class="grid g3">
+    <div class="card t-amber"><div class="kicker" style="color:var(--amber)">Inconsistent listings</div><p class="sub" style="font-size:13px">The campus appears under several different names, numbers, and addresses across the major directories — no two fully agree.</p></div>
+    <div class="card t-amber"><div class="kicker" style="color:var(--amber)">Hard to find</div><p class="sub" style="font-size:13px">A search for &ldquo;church in Kapolei&rdquo; doesn't surface the campus — neighboring churches do.</p></div>
+    <div class="card t-amber"><div class="kicker" style="color:var(--amber)">Unmanaged profiles</div><p class="sub" style="font-size:13px">Key map and review listings appear unclaimed or stale, and the social hub points to advertisers instead of the church's own pages.</p></div>
+  </div>
+  <a class="cta" href="mailto:travis@buteranet.com?subject=King's%20West%20O'ahu%20—%20full%20confidential%20audit">Request the full confidential audit →</a>
+</div></div>
+
+<!-- IMPLEMENTATION ROADMAP -->
+<div class="section"><div class="wrap">
+  <span class="band plan">● Our plan for West O'ahu</span>
+  <h2>The roadmap, step by step</h2>
+  <div class="card">
+    <div class="step"><div class="n">1</div><div><h3>Certify the facts &amp; clean the online presence</h3><p class="sub">Leadership confirms one name, phone, address, schedule. We standardize every listing — no site visit needed.</p></div></div>
+    <div class="step"><div class="n">2</div><div><h3>On-site assessment + BCAF v1.3 scoring</h3><p class="sub">Full walkthrough, device inventory, baseline speed tests, and a scored security maturity report.</p></div></div>
+    <div class="step"><div class="n">3</div><div><h3>Standardized network &amp; Wi-Fi build</h3><p class="sub">One golden design — firewall, segmentation, coverage — owned outright by the church.</p></div></div>
+    <div class="step"><div class="n">4</div><div><h3>Managed services + documentation handover</h3><p class="sub">Monitoring, patching, backup, SOPs, and the self-sufficiency handover. Then replicate to the next campus.</p></div></div>
+  </div>
+</div></div>
+
+<!-- CTA -->
+<div class="section navy" style="text-align:center"><div class="wrap">
+  <div class="eyebrow">If You Say Yes</div>
+  <h2>One standard, proven once, ready for every campus</h2>
+  <p class="lead" style="margin:0 auto 18px">Start with West O'ahu's online-presence cleanup and a no-obligation assessment. Everything we build, the church owns.</p>
+  <a class="cta" href="mailto:travis@buteranet.com?subject=King's%20West%20O'ahu%20—%20next%20steps" style="background:#fff;color:var(--navy)">Talk to ButeraNet →</a>
+</div></div>
+
+<!-- FOOTER -->
+<div class="foot"><div class="wrap">
+  <div class="name">ButeraNet Solutions</div>
+  <div style="margin-top:6px">Managed IT for churches and ministries &middot; Hawaii</div>
+  <div style="margin-top:8px">buteranet.com &nbsp;&middot;&nbsp; travis@buteranet.com</div>
+  <div class="disc">Prepared for King's O'ahu leadership regarding the King's West O'ahu (Kapolei) campus. <b>Proven at KCO</b>
+  figures are measured results from the Kings Central Oahu engagement and verifiable with its operations point of
+  contact. <b>Found at West O'ahu</b> items are observed from public sources in June 2026 and pending leadership
+  certification. <b>Plan &amp; target</b> figures — including self-sufficiency percentages and the sample Wi-Fi
+  heat-map — are illustrative targets, measured on the live environment during assessment, and are not claimed as
+  current West O'ahu facts. Cost figures reflect published vendor pricing (UniFi, Atera, Hudu — 2026); the scaling
+  model is illustrative for planning and is not a binding quote. UniFi has no per-device licensing. This page is
+  informational and is not a contract.</div>
+</div></div>
+
+<script>
+(function(){
+  // animate bars + gauges on scroll
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){
+    if(!e.isIntersecting)return;
+    var el=e.target;
+    if(el.classList.contains('bar')){el.querySelector('i').style.width=(el.dataset.fill||0)+'%';}
+    if(el.classList.contains('ring')){var c=389.6,p=+el.dataset.pct;el.style.transition='stroke-dashoffset 1.3s ease';el.style.strokeDashoffset=c*(1-p/100);}
+    io.unobserve(el);
+  });},{threshold:.4});
+  document.querySelectorAll('.bar,.ring').forEach(function(el){io.observe(el);});
+
+  // wifi heat sample (deterministic, illustrative)
+  var heat=document.getElementById('heat');
+  if(heat){var cols=['#0F7B55','#10b981','#3b82f6','#f59e0b','#B91C1C'];
+    // signal radiates from two AP points; fixed pattern, not random
+    var aps=[[1.5,1],[6,2.5]];
+    for(var r=0;r<5;r++)for(var c=0;c<8;c++){
+      var best=99;aps.forEach(function(a){var d=Math.sqrt(Math.pow(c-a[0],2)+Math.pow(r-a[1],2));if(d<best)best=d;});
+      var idx=best<1.4?0:best<2.4?1:best<3.4?2:best<4.4?3:4;
+      var cell=document.createElement('div');cell.style.background=cols[idx];cell.style.opacity=idx===4?'.85':'1';heat.appendChild(cell);
+    }
+  }
+
+  // cost scaling model — real published rates
+  var FEE=[[1,500],[25,350],[100,225],[300,150],[900,95]];
+  function managed(n){var t=0,prev=0;for(var k=0;k<FEE.length;k++){var u=FEE[k][0],r=FEE[k][1];if(n>prev){t+=(Math.min(n,u)-prev)*r;prev=u;}else break;}return t;}
+  function tool(n){return n<=25?206:n<=100?750:n<=300?1500:3500;}
+  function usd(n){return Math.round(n).toLocaleString();}
+  var s=document.getElementById('sites');
+  function recalc(){var n=Math.max(1,+s.value),m=managed(n),t=tool(n);
+    document.getElementById('sv').textContent=s.value;
+    document.getElementById('mf').textContent=usd(m);
+    document.getElementById('tl').textContent=usd(t);
+    document.getElementById('ps').textContent=usd((m+t)/n);}
+  if(s){s.addEventListener('input',recalc);recalc();}
+})();
+</script>
+</body>
+</html>
