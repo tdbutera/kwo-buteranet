@@ -72,10 +72,15 @@ table{border-collapse:collapse;width:100%;}
 .mlabel{display:flex;justify-content:space-between;font-size:12px;}
 .mlabel b{color:var(--navy);}
 .gauge-wrap{display:flex;gap:26px;flex-wrap:wrap;justify-content:center;}
-.gauge{text-align:center;}
-.gauge svg{transform:rotate(-90deg);}
-.gauge .num{font-size:26px;font-weight:900;color:var(--navy);margin-top:-58px;display:block;}
-.gauge .cap{font-size:12px;color:var(--muted);margin-top:30px;}
+.gauge{position:relative;text-align:center;width:150px;}
+.gauge svg{transform:rotate(-90deg);display:block;}
+.gauge .num{position:absolute;left:0;right:0;top:75px;transform:translateY(-50%);font-size:28px;font-weight:900;}
+.gauge .cap{font-size:12px;color:var(--muted);margin-top:12px;}
+.bigmetric{text-align:center;padding:10px 8px;}
+.bignum{font-size:52px;font-weight:900;line-height:1;letter-spacing:-1.5px;color:var(--green);}
+.bignum.blue{color:var(--blue);} .bignum.navy{color:var(--navy);}
+.bigmetric .lbl{font-size:12.5px;color:var(--muted);margin-top:8px;font-weight:600;line-height:1.35;}
+@media(max-width:640px){.bignum{font-size:40px;}}
 .step{display:flex;gap:14px;padding:14px 0;align-items:flex-start;} .step+.step{border-top:1px solid var(--line);}
 .step .n{flex-shrink:0;width:30px;height:30px;border-radius:15px;background:var(--navy);color:#fff;font-weight:800;font-size:13px;display:flex;align-items:center;justify-content:center;}
 .controls{display:flex;gap:26px;flex-wrap:wrap;align-items:flex-end;}
@@ -117,6 +122,7 @@ input[type=range]{width:100%;max-width:240px;height:26px;cursor:pointer;accent-c
     <a href="#capabilities">Capabilities</a>
     <a href="#proof">Proof</a>
     <a href="#security">Security</a>
+    <a href="#files">Files</a>
     <a href="#plan">Plan</a>
     <a class="navcta" href="#contact">Contact</a>
   </div>
@@ -137,13 +143,24 @@ input[type=range]{width:100%;max-width:240px;height:26px;cursor:pointer;accent-c
   </div>
 </div></div>
 
+<!-- HEADLINE WINS -->
+<div class="section" style="padding:40px 0 8px"><div class="wrap">
+  <div class="grid g4" style="gap:10px">
+    <div class="bigmetric"><div class="bignum green">−91%</div><div class="lbl">Wi-Fi drop-offs<br>(measured at KCO)</div></div>
+    <div class="bigmetric"><div class="bignum blue">1 → 7</div><div class="lbl">isolated network zones<br>for security</div></div>
+    <div class="bigmetric"><div class="bignum navy">100%</div><div class="lbl">church-owned<br>hardware &amp; data</div></div>
+    <div class="bigmetric"><div class="bignum green">$0</div><div class="lbl">per-device<br>licensing fees</div></div>
+  </div>
+  <p class="sub" style="text-align:center;margin-top:10px">The wins leadership feels first — proven at Kings Central Oahu, and the same build comes to West O'ahu.</p>
+</div></div>
+
 <!-- PROVEN AT KCO -->
 <div class="section" id="proof"><div class="wrap">
   <span class="band proven">● Proven at Kings Central Oahu — measured results</span>
   <h2>This is a record, not a projection</h2>
   <p class="lead">King's West O'ahu is a sister campus to Kings Central Oahu (Hawaii Kai) — ButeraNet's founding
   engagement. Every number below was measured on that network and is verifiable with its operations point of contact.</p>
-  <div class="grid g2" style="align-items:start">
+  <div class="grid" style="align-items:start">
     <div class="table-scroll"><table class="bn-table">
       <thead><tr><th>Area</th><th>Before</th><th>After</th></tr></thead>
       <tbody>
@@ -232,6 +249,23 @@ input[type=range]{width:100%;max-width:240px;height:26px;cursor:pointer;accent-c
       <p class="sub" style="font-size:13px;margin-top:6px">3-2-1-1-0 backup model — 3 copies, 2 media, 1 offsite, 1 immutable, 0 failed restore tests. Restores actually tested, not assumed.</p></div>
     <div class="card t-green"><h3>Managed Services (MSP)</h3>
       <p class="sub" style="font-size:13px;margin-top:6px">24/7 monitoring, remote management, patching, helpdesk, and monthly reporting. Minimally-manned by design — runs reliably with no IT staff on site.</p></div>
+  </div>
+</div></div>
+
+<!-- ONE SOURCE OF TRUTH -->
+<div class="section" id="files"><div class="wrap">
+  <div class="eyebrow">Your Files, One Home</div>
+  <h2>One place for everything — reachable anywhere, controlled by you</h2>
+  <p class="lead">Today, files live scattered across staff laptops, phones, and one-off logins. We bring them into a
+  single secure home the church owns — so the right people reach the right things from anywhere, and nothing walks
+  out the door when a volunteer leaves or a laptop dies.</p>
+  <div class="grid g3">
+    <div class="card t-blue"><h3>Pastor Wes's files, anywhere</h3><p class="sub" style="font-size:13px;margin-top:6px">Sermons, notes, and documents reachable from any device — home, office, or on the road — and only by the people he authorizes.</p></div>
+    <div class="card t-blue"><h3>Media team, in sync</h3><p class="sub" style="font-size:13px;margin-top:6px">Graphics, video, and service assets in one shared library — no more "it's on my laptop," no duplicate copies, one current version.</p></div>
+    <div class="card t-blue"><h3>History that stays</h3><p class="sub" style="font-size:13px;margin-top:6px">Finances, event records, and institutional knowledge kept in the organization — not stuck in one person's login on one aging machine.</p></div>
+    <div class="card t-green"><h3>You control who sees what</h3><p class="sub" style="font-size:13px;margin-top:6px">Finance stays with finance, media with media. Grant or revoke access in one place — instantly, the moment a role changes.</p></div>
+    <div class="card t-green"><h3>No reinventing the wheel</h3><p class="sub" style="font-size:13px;margin-top:6px">Versioned files mean one source of truth — not five conflicting copies emailed around and rebuilt from scratch.</p></div>
+    <div class="card t-green"><h3>One integrated ecosystem</h3><p class="sub" style="font-size:13px;margin-top:6px">Email, files, calendar, and apps connected and maintained from one place — and replicated to every campus the same way.</p></div>
   </div>
 </div></div>
 
@@ -356,6 +390,16 @@ input[type=range]{width:100%;max-width:240px;height:26px;cursor:pointer;accent-c
     <div class="card t-amber"><div class="kicker" style="color:var(--amber)">Inconsistent listings</div><p class="sub" style="font-size:13px">The campus appears under several different names, numbers, and addresses across the major directories — no two fully agree.</p></div>
     <div class="card t-amber"><div class="kicker" style="color:var(--amber)">Hard to find</div><p class="sub" style="font-size:13px">A search for &ldquo;church in Kapolei&rdquo; doesn't surface the campus — neighboring churches do.</p></div>
     <div class="card t-amber"><div class="kicker" style="color:var(--amber)">Unmanaged profiles</div><p class="sub" style="font-size:13px">Key map and review listings appear unclaimed or stale, and the social hub points to advertisers instead of the church's own pages.</p></div>
+  </div>
+  <div style="margin:24px 0 8px"><div class="eyebrow" style="color:var(--green)">The Upside — industry benchmarks</div>
+    <p class="sub" style="margin:4px 0 14px;max-width:780px">What organizations typically gain when they fix exactly these issues. These are published industry averages — not a guarantee for West O'ahu — but they're the metrics the gaps above directly affect.</p>
+    <div class="grid g4" style="gap:10px">
+      <div class="bigmetric"><div class="bignum green">2.7×</div><div class="lbl">more likely to be seen as reputable with a complete profile</div></div>
+      <div class="bigmetric"><div class="bignum green">+70%</div><div class="lbl">more likely to drive a visit</div></div>
+      <div class="bigmetric"><div class="bignum blue">+42%</div><div class="lbl">more direction requests when photos are added</div></div>
+      <div class="bigmetric"><div class="bignum navy">76%</div><div class="lbl">of &ldquo;near me&rdquo; searchers visit within a day</div></div>
+    </div>
+    <p class="sub" style="font-size:11px;margin-top:10px;font-style:italic">Sources: Google (Business Profile completeness &amp; photos) · local-search industry research. Industry averages, not campus-specific projections.</p>
   </div>
   <a class="cta" href="mailto:travis@buteranet.com?subject=King's%20West%20O'ahu%20—%20full%20confidential%20audit">Request the full confidential audit →</a>
 </div></div>
